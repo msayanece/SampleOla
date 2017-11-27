@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 .setxAppToken(getResources().getString(R.string.x_app_token))
 //                .setUserName("msayan64@gmail.com")
 //                .setPassword("Titirece@50")
-                .build();
+                .build(getApplicationContext());
         mAccessTokenManager = new AccessTokenManager();
         Authenticate.authenticateUser(this, mSessionConfig, mAccessTokenManager, new AuthenticateCallback() {
             @Override
